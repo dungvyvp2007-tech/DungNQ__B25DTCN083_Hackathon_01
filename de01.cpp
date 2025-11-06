@@ -56,26 +56,26 @@ int main(){
                 }
                 break;
 			case 3:
-    if (n == 0) {
-        printf("Mang rong, vui long nhap gia tri cho mang!\n");
-    } else {
-        printf("Cac so nguyen to trong mang la: ");
-        for (i = 0; i < n; i++) {
-            if (a[i] < 2) continue;
-            isPrime = 1;
-            for (j = 2; j * j <= a[i]; j++) {
-                if (a[i] % j == 0) {
-                    isPrime = 0;
-                    break;
-                }
-            }
-            if (isPrime) {
-                printf("%d ", a[i]);
-            }
-        }
-        printf("\n");
-    }
-    break;
+			    if (n == 0) {
+			        printf("Mang rong, vui long nhap gia tri cho mang!\n");
+			    } else {
+			        printf("Cac so nguyen to trong mang la: ");
+			        for (i = 0; i < n; i++) {
+			            if (a[i] < 2) continue;
+			            isPrime = 1;
+			            for (j = 2; j * j <= a[i]; j++) {
+			                if (a[i] % j == 0) {
+			                    isPrime = 0;
+			                    break;
+			                }
+			            }
+			            if (isPrime) {
+			                printf("%d ", a[i]);
+			            }
+			        }
+			        printf("\n");
+			    }
+			    break;
 	 		case 4:
 	 			if(n==0){
 	 				printf("Mang rong , vui long nhap gia tri cho mang !\n");
@@ -182,4 +182,5 @@ int main(){
 	}while(choice!=11);
 	return 0;
 }
+
 
