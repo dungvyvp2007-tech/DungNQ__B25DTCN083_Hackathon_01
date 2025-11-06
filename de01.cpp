@@ -61,16 +61,16 @@ int main(){
 			    } else {
 			        printf("Cac so nguyen to trong mang la: ");
 			        for (i = 0; i < n; i++) {
-			            if (a[i] < 2) continue;
+			            if (arr[i] < 2) continue;
 			            isPrime = 1;
-			            for (j = 2; j * j <= a[i]; j++) {
-			                if (a[i] % j == 0) {
+			            for (j = 2; j * j <= arr[i]; j++) {
+			                if (arr[i] % j == 0) {
 			                    isPrime = 0;
 			                    break;
 			                }
 			            }
 			            if (isPrime) {
-			                printf("%d ", a[i]);
+			                printf("%d ", arr[i]);
 			            }
 			        }
 			        printf("\n");
@@ -182,5 +182,6 @@ int main(){
 	}while(choice!=11);
 	return 0;
 }
+
 
 
